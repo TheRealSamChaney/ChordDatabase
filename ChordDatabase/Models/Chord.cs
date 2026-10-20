@@ -3,7 +3,7 @@
     public class Chord
     {
         public int Id { get; set; }
-        public string Quality { get; set; }
+        public string Quality { get; set; } = string.Empty;
         public String? Extension { get; set; }
         public String? Alterations { get; set; }
         public String? Inversion { get; set; }
