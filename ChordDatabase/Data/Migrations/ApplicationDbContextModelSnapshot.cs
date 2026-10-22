@@ -17,7 +17,7 @@ namespace ChordDatabase.Data.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "7.0.3")
+                .HasAnnotation("ProductVersion", "10.0.0")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -55,6 +55,411 @@ namespace ChordDatabase.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Chord");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Alterations = "#5",
+                            Extension = "7",
+                            Feeling = "Floating, unresolved",
+                            Functions = "Tension",
+                            Inversion = "Root",
+                            Quality = "Major",
+                            Scale = "Lydian #5"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Feeling = "Bright, stable",
+                            Functions = "Tonic, subdominant, dominant",
+                            Quality = "Major",
+                            Scale = "Ionian"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Feeling = "Sad, serious",
+                            Functions = "Tonic",
+                            Quality = "Minor",
+                            Scale = "Aeolian"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Extension = "7",
+                            Feeling = "Warm, resolved",
+                            Functions = "Tonic",
+                            Quality = "Major",
+                            Scale = "Ionian"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Alterations = "#11",
+                            Extension = "7",
+                            Feeling = "Dreamy, bright",
+                            Functions = "Tonic, subdominant, nonfunctional",
+                            Quality = "Major",
+                            Scale = "Lydian"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Extension = "7",
+                            Feeling = "Smooth, mellow",
+                            Functions = "Subdominant, tonic",
+                            Quality = "Minor",
+                            Scale = "Dorian"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Extension = "7",
+                            Feeling = "Mysterious, cinematic",
+                            Functions = "Tonic, tension",
+                            Quality = "Minor-Major",
+                            Scale = "Melodic Minor"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            Feeling = "Tense, unstable",
+                            Functions = "Dominant, passing",
+                            Quality = "Diminished",
+                            Scale = "Locrian"
+                        },
+                        new
+                        {
+                            Id = 9,
+                            Feeling = "Dreamy, unresolved",
+                            Functions = "Tension",
+                            Quality = "Augmented",
+                            Scale = "Whole Tone"
+                        },
+                        new
+                        {
+                            Id = 10,
+                            Alterations = "sus4",
+                            Feeling = "Open, suspended",
+                            Functions = "Dominant, tension",
+                            Quality = "Suspended",
+                            Scale = "Mixolydian"
+                        },
+                        new
+                        {
+                            Id = 11,
+                            Extension = "add9",
+                            Feeling = "Shimmering, open",
+                            Functions = "Tonic",
+                            Quality = "Major",
+                            Scale = "Ionian"
+                        },
+                        new
+                        {
+                            Id = 12,
+                            Extension = "6",
+                            Feeling = "Warm, vintage",
+                            Functions = "Tonic",
+                            Quality = "Major",
+                            Scale = "Ionian"
+                        },
+                        new
+                        {
+                            Id = 13,
+                            Extension = "6/9",
+                            Feeling = "Lush, resolved",
+                            Functions = "Tonic",
+                            Quality = "Major",
+                            Scale = "Ionian"
+                        },
+                        new
+                        {
+                            Id = 14,
+                            Extension = "6",
+                            Feeling = "Bittersweet, noir",
+                            Functions = "Tonic, subdominant",
+                            Quality = "Minor",
+                            Scale = "Dorian"
+                        },
+                        new
+                        {
+                            Id = 15,
+                            Extension = "6/9",
+                            Feeling = "Smoky, sophisticated",
+                            Functions = "Tonic, subdominant",
+                            Quality = "Minor",
+                            Scale = "Dorian"
+                        },
+                        new
+                        {
+                            Id = 16,
+                            Extension = "9",
+                            Feeling = "Rich, open",
+                            Functions = "Tonic, subdominant",
+                            Quality = "Major",
+                            Scale = "Ionian"
+                        },
+                        new
+                        {
+                            Id = 17,
+                            Extension = "13",
+                            Feeling = "Lush, full",
+                            Functions = "Tonic",
+                            Quality = "Major",
+                            Scale = "Ionian"
+                        },
+                        new
+                        {
+                            Id = 18,
+                            Alterations = "#11",
+                            Extension = "9",
+                            Feeling = "Dreamy, floating",
+                            Functions = "Tonic, subdominant, nonfunctional",
+                            Quality = "Major",
+                            Scale = "Lydian"
+                        },
+                        new
+                        {
+                            Id = 19,
+                            Alterations = "#11",
+                            Extension = "13",
+                            Feeling = "Expansive, shimmering",
+                            Functions = "Tonic, subdominant, nonfunctional",
+                            Quality = "Major",
+                            Scale = "Lydian"
+                        },
+                        new
+                        {
+                            Id = 20,
+                            Extension = "9",
+                            Feeling = "Smooth, mellow",
+                            Functions = "Subdominant, tonic",
+                            Quality = "Minor",
+                            Scale = "Dorian"
+                        },
+                        new
+                        {
+                            Id = 21,
+                            Extension = "11",
+                            Feeling = "Spacious, modern",
+                            Functions = "Subdominant, tonic",
+                            Quality = "Minor",
+                            Scale = "Dorian"
+                        },
+                        new
+                        {
+                            Id = 22,
+                            Extension = "9",
+                            Feeling = "Mysterious, elegant",
+                            Functions = "Tonic, tension",
+                            Quality = "Minor-Major",
+                            Scale = "Melodic Minor"
+                        },
+                        new
+                        {
+                            Id = 23,
+                            Extension = "7",
+                            Feeling = "Dark, yearning",
+                            Functions = "Subdominant",
+                            Quality = "Half-Diminished",
+                            Scale = "Locrian"
+                        },
+                        new
+                        {
+                            Id = 24,
+                            Extension = "9",
+                            Feeling = "Dark, softened",
+                            Functions = "Subdominant",
+                            Quality = "Half-Diminished",
+                            Scale = "Locrian #2"
+                        },
+                        new
+                        {
+                            Id = 25,
+                            Extension = "7",
+                            Feeling = "Symmetrical, tense",
+                            Functions = "Dominant, passing",
+                            Quality = "Diminished",
+                            Scale = "Diminished (Whole-Half)"
+                        },
+                        new
+                        {
+                            Id = 26,
+                            Extension = "7",
+                            Feeling = "Bluesy, driving",
+                            Functions = "Dominant",
+                            Quality = "Dominant",
+                            Scale = "Mixolydian"
+                        },
+                        new
+                        {
+                            Id = 27,
+                            Extension = "9",
+                            Feeling = "Funky, full",
+                            Functions = "Dominant",
+                            Quality = "Dominant",
+                            Scale = "Mixolydian"
+                        },
+                        new
+                        {
+                            Id = 28,
+                            Extension = "13",
+                            Feeling = "Lush, bluesy",
+                            Functions = "Dominant",
+                            Quality = "Dominant",
+                            Scale = "Mixolydian"
+                        },
+                        new
+                        {
+                            Id = 29,
+                            Alterations = "sus4",
+                            Extension = "7",
+                            Feeling = "Open, suspended",
+                            Functions = "Dominant, tension",
+                            Quality = "Dominant",
+                            Scale = "Mixolydian"
+                        },
+                        new
+                        {
+                            Id = 30,
+                            Alterations = "sus4",
+                            Extension = "9",
+                            Feeling = "Floating, modern",
+                            Functions = "Dominant, tension",
+                            Quality = "Dominant",
+                            Scale = "Mixolydian"
+                        },
+                        new
+                        {
+                            Id = 31,
+                            Alterations = "sus4",
+                            Extension = "13",
+                            Feeling = "Airy, unresolved",
+                            Functions = "Dominant, tension",
+                            Quality = "Dominant",
+                            Scale = "Mixolydian"
+                        },
+                        new
+                        {
+                            Id = 32,
+                            Alterations = "b9",
+                            Extension = "7",
+                            Feeling = "Dark, urgent",
+                            Functions = "Dominant, tension",
+                            Quality = "Dominant",
+                            Scale = "Diminished (Half-Whole)"
+                        },
+                        new
+                        {
+                            Id = 33,
+                            Alterations = "b9",
+                            Extension = "13",
+                            Feeling = "Dark, colorful",
+                            Functions = "Dominant, tension",
+                            Quality = "Dominant",
+                            Scale = "Diminished (Half-Whole)"
+                        },
+                        new
+                        {
+                            Id = 34,
+                            Alterations = "#9",
+                            Extension = "7",
+                            Feeling = "Gritty, edgy",
+                            Functions = "Dominant, tension",
+                            Quality = "Dominant",
+                            Scale = "Altered"
+                        },
+                        new
+                        {
+                            Id = 35,
+                            Alterations = "#11",
+                            Extension = "7",
+                            Feeling = "Bright, quirky",
+                            Functions = "Dominant, tritone substitution",
+                            Quality = "Dominant",
+                            Scale = "Lydian Dominant"
+                        },
+                        new
+                        {
+                            Id = 36,
+                            Alterations = "#11",
+                            Extension = "9",
+                            Feeling = "Bright, floating",
+                            Functions = "Dominant, tritone substitution",
+                            Quality = "Dominant",
+                            Scale = "Lydian Dominant"
+                        },
+                        new
+                        {
+                            Id = 37,
+                            Alterations = "#11",
+                            Extension = "13",
+                            Feeling = "Bright, expansive",
+                            Functions = "Dominant, tritone substitution",
+                            Quality = "Dominant",
+                            Scale = "Lydian Dominant"
+                        },
+                        new
+                        {
+                            Id = 38,
+                            Alterations = "#5",
+                            Extension = "7",
+                            Feeling = "Floating, unsettled",
+                            Functions = "Dominant, tension",
+                            Quality = "Dominant",
+                            Scale = "Whole Tone"
+                        },
+                        new
+                        {
+                            Id = 39,
+                            Alterations = "#5",
+                            Extension = "9",
+                            Feeling = "Dreamy, unsettled",
+                            Functions = "Dominant, tension",
+                            Quality = "Dominant",
+                            Scale = "Whole Tone"
+                        },
+                        new
+                        {
+                            Id = 40,
+                            Alterations = "b13",
+                            Extension = "7",
+                            Feeling = "Dark, bittersweet",
+                            Functions = "Dominant",
+                            Quality = "Dominant",
+                            Scale = "Mixolydian b6"
+                        },
+                        new
+                        {
+                            Id = 41,
+                            Alterations = "b13",
+                            Extension = "9",
+                            Feeling = "Dark, rich",
+                            Functions = "Dominant",
+                            Quality = "Dominant",
+                            Scale = "Mixolydian b6"
+                        },
+                        new
+                        {
+                            Id = 42,
+                            Alterations = "b9, b13",
+                            Extension = "7",
+                            Feeling = "Spanish, dramatic",
+                            Functions = "Dominant, tension",
+                            Quality = "Dominant",
+                            Scale = "Phrygian Dominant"
+                        },
+                        new
+                        {
+                            Id = 43,
+                            Alterations = "alt",
+                            Extension = "7",
+                            Feeling = "Maximum tension",
+                            Functions = "Dominant, tension",
+                            Quality = "Dominant",
+                            Scale = "Altered"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
